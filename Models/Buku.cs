@@ -1,9 +1,9 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Buku.Models
+namespace Perpustakaan.Models
 {
-    public class Movie
+    public class Buku
     {
         public int Id { get; set; }
         public string Title { get; set; }

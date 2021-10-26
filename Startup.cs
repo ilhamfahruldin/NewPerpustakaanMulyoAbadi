@@ -8,11 +8,17 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Perpustakaan.Models;
+using Microsoft.EntityFrameworkCore;
+using Pomelo.EntityFrameworkCore.MySql;
+using Perpustakaan.Data;
+using Microsoft.AspNetCore.Identity;
 
 namespace Perpustakaan
 {
     public class Startup
     {
+        
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -24,7 +30,19 @@ namespace Perpustakaan
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-        }
+            services.AddDbContext<PerpusDbContext>(option =>
+            {
+            var connectionString = Configuration.GetConnectionString("Perpustakaan");
+            var serverVersion = new MariaDbServerVersion(new Version(10, 6, 4));
+            option.UseMySql(connectionString, serverVersion);
+            });
+            services
+            .AddDefaultIdentity<Pembaca>()
+            .AddEntityFrameworkStores<PerpusDbContext>()
+
+            .AddDefaultTokenProviders();
+            services.AddRazorPages();
+                    }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -44,6 +62,8 @@ namespace Perpustakaan
 
             app.UseRouting();
 
+            app.UseAuthentication();
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -53,5 +73,6 @@ namespace Perpustakaan
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
+        
     }
 }
