@@ -10,5 +10,10 @@ public PerpusDbContext (DbContextOptions<PerpusDbContext> options) : base(option
 { }
 public DbSet <Buku> Bukus { get; set; }
 
+ public DbSet<TodoList> TodoLists { get; set; }
+public DbSet<TodoItem> TodoItems { get; set; }
+
 }
 }
+
+

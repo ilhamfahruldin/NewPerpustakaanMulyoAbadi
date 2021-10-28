@@ -9,6 +9,7 @@ namespace Perpustakaan.Models
     public class Pembaca:IdentityUser
     {
          public string Name { get; set; }
+         public virtual List<TodoList> TodoLists { get; set; }
          
     }
     

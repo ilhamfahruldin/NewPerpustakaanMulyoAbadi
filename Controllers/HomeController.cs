@@ -10,12 +10,9 @@ using Microsoft.Extensions.Logging;
 using Perpustakaan.Data;
 using Perpustakaan.Models;
 
-
 namespace Perpustakaan.Controllers
 {
-    [Route("[controller]")]
-  public class TalkController : Controller
-  {
+    
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -28,24 +25,19 @@ namespace Perpustakaan.Controllers
             _context = context;
             _userManager = userManager;
         }
-        
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
 
         public IActionResult Index()
         {
             var userId = _userManager.GetUserId(User);
             var user = _context.Users.Find(userId);
-             return View(user);
+            return View(user);
         }
 
         public IActionResult Privacy()
         {
             return View();
         }
+
         public IActionResult List()
         {
             return View();
@@ -53,13 +45,12 @@ namespace Perpustakaan.Controllers
         public IActionResult Isi()
         {
             return View();
+        
         }
-           
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
-}
 }

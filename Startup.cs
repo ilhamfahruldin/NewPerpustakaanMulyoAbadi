@@ -8,17 +8,15 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Perpustakaan.Models;
 using Microsoft.EntityFrameworkCore;
-using Pomelo.EntityFrameworkCore.MySql;
 using Perpustakaan.Data;
+using Perpustakaan.Models;
 using Microsoft.AspNetCore.Identity;
 
 namespace Perpustakaan
 {
     public class Startup
     {
-        
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -30,19 +28,16 @@ namespace Perpustakaan
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<PerpusDbContext>(option =>
-            {
-            var connectionString = Configuration.GetConnectionString("Perpustakaan");
-            var serverVersion = new MariaDbServerVersion(new Version(10, 6, 4));
-            option.UseMySql(connectionString, serverVersion);
+            services.AddDbContext<PerpusDbContext>(options => {
+                options.UseNpgsql(Configuration.GetConnectionString("Dev"));
+                options.UseLazyLoadingProxies();
             });
             services
-            .AddDefaultIdentity<Pembaca>()
-            .AddEntityFrameworkStores<PerpusDbContext>()
-
-            .AddDefaultTokenProviders();
+                .AddDefaultIdentity<Pembaca>()
+                .AddEntityFrameworkStores<PerpusDbContext>()
+                .AddDefaultTokenProviders();
             services.AddRazorPages();
-                    }
+        }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -71,8 +66,8 @@ namespace Perpustakaan
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapRazorPages();
             });
         }
-        
     }
 }
