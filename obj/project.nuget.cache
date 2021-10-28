@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TFCRKVmU99kS7+0dD+AqSbEmLyBORn66L4E+vrY9lBj0ZxqvFLA/sxWjz8alOJVwo6pE5A69mCx6jmRZJ8m89w==",
+  "dgSpecHash": "m/R33FbWdeSwLKxrpZX/4JICPk5GQ289WS7QV0H9gfGLtUZdWQsYMzU3IJvqLQDPEEuTZ7X8N7FlHn2gQ3K8Gw==",
   "success": true,
   "projectFilePath": "C:\\Users\\HP\\PerpustakaanAbadi\\Perpustakaan.csproj",
   "expectedPackageFiles": [
@@ -30,6 +30,7 @@
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.11\\microsoft.entityframeworkcore.design.5.0.11.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.entityframeworkcore.proxies\\5.0.11\\microsoft.entityframeworkcore.proxies.5.0.11.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.11\\microsoft.entityframeworkcore.relational.5.0.11.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.entityframeworkcore.relational.design\\1.1.0\\microsoft.entityframeworkcore.relational.design.1.1.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.11\\microsoft.entityframeworkcore.sqlserver.5.0.11.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.11\\microsoft.entityframeworkcore.tools.5.0.11.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
@@ -67,6 +68,9 @@
     "C:\\Users\\HP\\.nuget\\packages\\mysqlconnector\\1.3.13\\mysqlconnector.1.3.13.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\npgsql\\5.0.10\\npgsql.5.0.10.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\5.0.10\\npgsql.entityframeworkcore.postgresql.5.0.10.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql.design\\1.1.0\\npgsql.entityframeworkcore.postgresql.design.1.1.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\5.0.2\\pomelo.entityframeworkcore.mysql.5.0.2.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

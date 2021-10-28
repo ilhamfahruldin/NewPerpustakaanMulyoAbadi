@@ -7,7 +7,7 @@ namespace Perpustakaan.Models
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public int UserId { get; set; }
+        public string UserId { get; set; }
         public virtual Pembaca User { get; set; }
 
         public virtual List<TodoItem> TodoItems { get; set; }
