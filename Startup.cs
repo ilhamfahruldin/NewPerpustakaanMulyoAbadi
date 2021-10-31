@@ -29,7 +29,9 @@ namespace Perpustakaan
         {
             services.AddControllersWithViews();
             services.AddDbContext<PerpusDbContext>(options => {
-                options.UseNpgsql(Configuration.GetConnectionString("Dev"));
+                var connectionString = Configuration.GetConnectionString("Perpustakaan");
+                var serverVersion = new MariaDbServerVersion(new Version(10, 6, 4));
+                options.UseMySql(connectionString, serverVersion);
                 options.UseLazyLoadingProxies();
             });
             services

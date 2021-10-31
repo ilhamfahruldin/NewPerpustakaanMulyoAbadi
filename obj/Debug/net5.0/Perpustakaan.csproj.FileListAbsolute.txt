@@ -309,13 +309,6 @@ C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\scopedcss\bundle\Perpustakaan.sty
 C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Perpustakaan.TagHelpers.input.cache
 C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Perpustakaan.TagHelpers.output.cache
 C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Perpustakaan.RazorCoreGenerate.cache
-C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
-C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
-C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
-C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
-C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
-C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
-C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Views\Home\Isi.cshtml.g.cs
 C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Views\Home\List.cshtml.g.cs
@@ -340,3 +333,11 @@ C:\Users\HP\PerpustakaanAbadi\bin\Debug\net5.0\Npgsql.dll
 C:\Users\HP\PerpustakaanAbadi\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\HP\PerpustakaanAbadi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
 C:\Users\HP\PerpustakaanAbadi\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
+C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Views\Home\Pinjam.cshtml.g.cs

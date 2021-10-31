@@ -47,6 +47,10 @@ namespace Perpustakaan.Controllers
             return View();
         
         }
+        public IActionResult Pinjam()
+        {
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
