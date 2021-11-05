@@ -12,7 +12,7 @@ using Perpustakaan.Models;
 
 namespace Perpustakaan.Controllers
 {
-    
+    [Authorize(Roles = "Admin")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -42,7 +42,17 @@ namespace Perpustakaan.Controllers
         {
             return View();
         }
-        public IActionResult Isi()
+        public IActionResult AthomicHabits()
+        {
+            return View();
+        
+        }
+        public IActionResult Invested()
+        {
+            return View();
+        
+        }
+        public IActionResult BerdamaiMalas()
         {
             return View();
         

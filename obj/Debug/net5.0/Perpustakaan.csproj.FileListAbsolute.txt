@@ -310,7 +310,6 @@ C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Perpustakaan.TagHelpers.input.cac
 C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Perpustakaan.TagHelpers.output.cache
 C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Perpustakaan.RazorCoreGenerate.cache
 C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Views\Home\Isi.cshtml.g.cs
 C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Views\Home\List.cshtml.g.cs
 C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
@@ -341,3 +340,6 @@ C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_Valid
 C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Views\Home\Pinjam.cshtml.g.cs
+C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Views\Home\AthomicHabits.cshtml.g.cs
+C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Views\Home\Invested.cshtml.g.cs
+C:\Users\HP\PerpustakaanAbadi\obj\Debug\net5.0\Razor\Views\Home\BerdamaiMalas.cshtml.g.cs

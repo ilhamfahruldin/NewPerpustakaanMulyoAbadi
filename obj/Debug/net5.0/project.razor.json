@@ -15619,6 +15619,11 @@
   "RootNamespace": "Perpustakaan",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\HP\\PerpustakaanAbadi\\Views\\Home\\Invested.cshtml",
+      "TargetPath": "Views\\Home\\Invested.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\HP\\PerpustakaanAbadi\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -15644,8 +15649,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\HP\\PerpustakaanAbadi\\Views\\Home\\Isi.cshtml",
-      "TargetPath": "Views\\Home\\Isi.cshtml",
+      "FilePath": "c:\\Users\\HP\\PerpustakaanAbadi\\Views\\Home\\AthomicHabits.cshtml",
+      "TargetPath": "Views\\Home\\AthomicHabits.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15701,6 +15706,11 @@
     {
       "FilePath": "c:\\Users\\HP\\PerpustakaanAbadi\\Views\\Shared\\_LoginPartial.cshtml",
       "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HP\\PerpustakaanAbadi\\Views\\Home\\BerdamaiMalas.cshtml",
+      "TargetPath": "Views\\Home\\BerdamaiMalas.cshtml",
       "FileKind": "mvc"
     },
     {

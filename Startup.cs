@@ -36,6 +36,7 @@ namespace Perpustakaan
             });
             services
                 .AddDefaultIdentity<Pembaca>()
+                .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<PerpusDbContext>()
                 .AddDefaultTokenProviders();
             services.AddRazorPages();
