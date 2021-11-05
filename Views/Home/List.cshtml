@@ -2,36 +2,42 @@
 @{
     ViewData["Title"] = "Perpustakaan";
 }
-
+<h1>Buku Terbaik:</h1><br>
 <style>
-    section{
-        margin: auto;
-        display: flex;
-        margin-bottom: 50px;
-    }
+  .buku-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .listbuku {
+    margin: 0 auto;
+  }
+  .listbuku p {
+    font-family: 'muara demo';
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+  }
+
 </style>
-<section>
-    <tr>
-      <table class="table table">
-      <thead class="thead-dark">
-      <th scope="col">Buku</th>
-      <th scope="col">Judul</th>
-    </tr>
-  </thead>
-  <tbody>
-    
-    <tr>
-      <td><img src="https://images.bisnis-cdn.com//upload/img/Invested%20-%20Danielle%20Town.png" width="250" height="150" ></td>
-      <td><a href="https://localhost:5001/Home/Invested">Invested</a></td>  
-    </tr>
-    <tr>
-      <td><img src="https://aquariuslearning.co.id/wp-content/uploads/2020/01/raw-atomic-habits.png" width="150"></td>
-      <td><a href="https://localhost:5001/Home/AthomicHabits">Athomic Habits</a></td>    
-    </tr>
-    <tr>
-      <td><img src="https://cf.shopee.co.id/file/6346cc2e197c5f3a1ffe3574ac818ba1" width="250" height="150" ></td>
-      <td><a href="https://localhost:5001/Home/KebiasaanHidup">KebiasaanHidup</a></td>
-    </tr>
-  </tbody>
-</table>
-</section>
+<div class="buku-list">
+    <div class="listbuku">
+      <a href="https://localhost:5001/Home/Invested"><img src="https://images.bisnis-cdn.com//upload/img/Invested%20-%20Danielle%20Town.png" width="240"/></a>
+      <p>Invested</p>
+    </div>
+    <div class="listbuku">
+    <a href="https://localhost:5001/Home/AthomicHabits"><img src="https://aquariuslearning.co.id/wp-content/uploads/2020/01/raw-atomic-habits.png"width="170"/></a>
+      <p>Atomic Habit</p>
+    </div>
+    <div class="listbuku">
+      <a href="https://localhost:5001/Home/KebiasaanHidup"><img src="https://s4.bukalapak.com/img/496434901/w-1000/3099981-63_scaled.jpg"width="145"/></a>
+      <p>Naruto</p>
+    </div>
+    <div class="listbuku">
+    <img src="https://inc.mizanstore.com/aassets/img/com_cart/produk/GRK-075.jpg"width="140"/>
+    <p>One Piece</p>
+    </div>
+  </div>
+</div>

@@ -12,7 +12,7 @@ using Perpustakaan.Models;
 
 namespace Perpustakaan.Controllers
 {
-    [Authorize (Roles = "Admin")]
+    [Authorize(Roles = "Admin")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
