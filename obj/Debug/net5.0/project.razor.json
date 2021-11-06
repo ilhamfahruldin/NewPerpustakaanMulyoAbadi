@@ -15649,6 +15649,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\project\\NewPerpustakaanMulyoAbadi\\Views\\List\\List.cshtml",
+      "TargetPath": "Views\\List\\List.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\project\\NewPerpustakaanMulyoAbadi\\Views\\Home\\Pinjam.cshtml",
       "TargetPath": "Views\\Home\\Pinjam.cshtml",
       "FileKind": "mvc"
@@ -15656,11 +15661,6 @@
     {
       "FilePath": "d:\\project\\NewPerpustakaanMulyoAbadi\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\project\\NewPerpustakaanMulyoAbadi\\Views\\Home\\List.cshtml",
-      "TargetPath": "Views\\Home\\List.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15676,6 +15676,11 @@
     {
       "FilePath": "d:\\project\\NewPerpustakaanMulyoAbadi\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\project\\NewPerpustakaanMulyoAbadi\\Views\\List\\Create.cshtml",
+      "TargetPath": "Views\\List\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15701,6 +15706,11 @@
     {
       "FilePath": "d:\\project\\NewPerpustakaanMulyoAbadi\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\project\\NewPerpustakaanMulyoAbadi\\Views\\Home\\Rekomendasi.cshtml",
+      "TargetPath": "Views\\Home\\Rekomendasi.cshtml",
       "FileKind": "mvc"
     },
     {

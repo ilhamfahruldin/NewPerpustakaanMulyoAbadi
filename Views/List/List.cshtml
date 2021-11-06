@@ -1,0 +1,26 @@
+@model IEnumerable<Buku>
+@{
+ViewData["Title"] = "Create";
+}
+<h2>Daftar Buku:</h2>
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>Judul</th>
+            <th>Deskripsi</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.Judul</td>
+            <td>@item.Deskripsi</td>
+        </tr>
+        }
+    </thead>
+</table>
+<button><a asp-controller="List" asp-action="Create">BuatBukuBaru</a></button>
+    
+    
+    
+    
+    

@@ -38,7 +38,7 @@ namespace Perpustakaan.Controllers
             return View();
         }
 
-        public IActionResult List()
+        public IActionResult Rekomendasi()
         {
             return View();
         }
