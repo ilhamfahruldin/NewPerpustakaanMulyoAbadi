@@ -1,40 +1,115 @@
-﻿@{
+﻿
+@{
     ViewData["Title"] = "Perpustakaan";
 }
-<html>
-<head>
 <style>
-body {
-  background-image: url('https://i0.wp.com/www.arrisalah.net/wp-content/uploads/2017/05/wallpapers-textures-minimalistic-desktop-best-images.jpg?fit=1920%2C1080&ssl=1');
-}
-</style>
-</head>
-<body>
-<html>
+  *{text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  .body{
+    margin:0px;
+    padding: 0px;
+    font-family: 'Open Sans',sans-serif;
+  }
+  .wrapper{
+    width: 1100px;
+    margin: auto;
+    position: relative;
+  }
+  .logo a{
+    font-size: 25px;
+    font-weight: 500; 
+    float:left;
+    font-family: 'muara demo';
+    color: blueviolet;
+  }
+  .menu{
+    float: right;
+  }
+
+  nav{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 30px;
+    position: sticky;
+    top: 0;
+    position: -webkit-sticky;
+  }
   
-<div class="container">
-<div class="row">
-<div class="col-md-6 description">
-<h3><b><i>Welcome to our website</i></b></h3>
-<p>Please enjoy our website.
-   read as many books as you can by reading books. 
-   opening the window of the world.
-   Reading adds to our insight into our disobedience to the world.
-   There are also many benefits of let's start reading from now on.</p>
-</div>
-<div class="col-md-6 rigth-image text-center">
-  <img src="https://www.saferkidsandhomes.com/wp-content/uploads/2018/01/rajin-belajar.jpg"width="280" height="180">
-</div>
-</div>
-<div class="row">
-<div class="col-md-6 right">
-<p class="rigth">Please enjoy our website.
-   read as many books as you can by reading books. 
-   opening the window of the world.
-   Reading adds to our insight into our disobedience to the world.
-   There are also many benefits of let's start reading from now on.</p>
-</div>
-</div>
-  <img src="https://kaksuata.files.wordpress.com/2018/02/read-book-knowledge.jpg"width="280" height="180">
+  section{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+  }
+  .kolom{
+    margin-top: 75px;
+    margin-bottom: 15px;
+  }
+  .kolom .deskripsi{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #fc5185;
+    margin-bottom:-10px;
+  }
+  h2{
+    font-family: 'comic sans ms';
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 5px;
+    margin-top: none;
+    width: 100%;
+    line-height: 40px;
+    color:#fc5185;
+  }
+  a.tombol{
+    background: #fc5185;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .p{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+</style>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+<body>
+  <nav>
+    <div class="wrapper">
+      <div class="logo"><a href="">PerpustakaanMulyoAbadi</a></div>
+      <div class="menu">
+        <ul>
+        
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="wrapper">
+      <section id="Home">
+        <img src="https://image.freepik.com/free-vector/library-isometric-illustration_1284-23674.jpg" width="430">
+        <div class="kolom">
+          <p class="deskripsi">Selamat Datang di</p>
+          <h2>PerpustakaanMulyoAbadi</h2>
+          <p style="font-family: muara demo;">"Perpustakaan yang baik tidak akan terlalu rapi, juga terlalu berdebu,
+             karena seseorang akan selalu ada di sana,
+             mengambil buku dari rak dan membacanya hingga larut."</p><br>
+          <p><a href="https://localhost:5001/Home/Rekomendasi" class="tombol">Daftar Rekomendasi</a></p>
+
+          
+        </div>
+      </section>
+    </div>
 </body>
 </html>
