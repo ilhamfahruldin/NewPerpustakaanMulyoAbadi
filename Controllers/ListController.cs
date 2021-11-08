@@ -54,18 +54,22 @@ namespace Perpustakaan.Controllers
             {
                 return NotFound();
             }
-            var buku = _context.Bukus.Find(id);
-            if (buku == null)
+            var details = _context.Details.Find(id);
+            if (details == null)
             {
                 return NotFound();
             }
-            return View(buku);
+            return View(details);
         }
         public IActionResult AtomicHabit()
         {
             return View();
         }
         public IActionResult Invested()
+        {
+            return View();
+        }
+        public IActionResult Naruto()
         {
             return View();
         }

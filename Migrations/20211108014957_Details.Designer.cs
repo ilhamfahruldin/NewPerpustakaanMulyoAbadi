@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Perpustakaan.Data;
 
 namespace Perpustakaan.Migrations
 {
     [DbContext(typeof(PerpusDbContext))]
-    partial class PerpusDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211108014957_Details")]
+    partial class Details
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -41,20 +43,6 @@ namespace Perpustakaan.Migrations
                         .HasDatabaseName("RoleNameIndex");
 
                     b.ToTable("AspNetRoles");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "9cf3ee2c-ca45-44a8-8a57-08b15b06bf3f",
-                            ConcurrencyStamp = "0e765116-a20a-4222-88e0-69ac58f258f2",
-                            Name = "Admin"
-                        },
-                        new
-                        {
-                            Id = "4376a3bb-954e-438b-9dac-8889a42a470c",
-                            ConcurrencyStamp = "93ec5c33-d8f4-412f-b6c9-81bc0a2c7e7c",
-                            Name = "User"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -268,25 +256,6 @@ namespace Perpustakaan.Migrations
                         .HasDatabaseName("UserNameIndex");
 
                     b.ToTable("AspNetUsers");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "cc641b6e-6e61-44d8-acb1-aeba3ce7f62e",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "acd804df-7fca-49db-81af-51c83d54fc4e",
-                            Email = "dwimul@admin.com",
-                            EmailConfirmed = true,
-                            LockoutEnabled = false,
-                            Name = "Mulyono",
-                            NormalizedEmail = "DWIMUL@ADMIN.COM",
-                            NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEFyXwsfhShwkry+sLx2fR4BcynKHrWe94ZpswLk+fK+XcYm3LQ4NxCJNNtmtNgV2Sw==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "d6a851e2-1af2-49ad-8be5-1ed899c65f5e",
-                            TwoFactorEnabled = false,
-                            UserName = "admin"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

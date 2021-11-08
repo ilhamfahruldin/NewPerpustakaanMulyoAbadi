@@ -17,7 +17,7 @@ ViewData["Title"] = "Create";
             <td>@item.Judul</td>
             <td>@item.Deskripsi</td>
             <td>@item.Terbit</td>
-            <td><a asp-controller="List" asp-action="Detail">Detail</a></td>
+            <td><a asp-controller="List" asp-action="Detail" asp-route-id="@item.Id">Detail</a></td>
         </tr>
         }
     </thead>

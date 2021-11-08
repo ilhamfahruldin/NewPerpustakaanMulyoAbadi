@@ -1,16 +1,20 @@
-@model Detail
+@model Details
 @{
     ViewData["Title"] = "Detail";
 }
-
-<h1>@Html.DisplayFor(modelItem => Model.Judul)</h1>
-<table class="table table-hover">
-    <tr>
-        <td>Judul</td>
-        <td>@Html.DisplayFor(modelItem => Model.Judul)</td>
-    </tr>
-    <tr>
-        <td>Deskripsi</td>
-        <td>@Html.DisplayFor(modelItem => Model.Deskripsi)</td>
-    </tr>
-</table>
+<style>
+    .h5{
+        padding: 10px;
+    }
+</style>
+<h3>@Html.DisplayFor(modelItem => Model.Judul)</h3><br>
+    
+        <h5>Judul:</h5>
+        @Html.DisplayFor(modelItem => Model.Judul)<br>
+    
+        <h5>Pengarang</h5>
+        @Html.DisplayFor(modelItem => Model.Pengarang)<br>
+   
+        <h5>Tahun Terbit</h5>
+        @Html.DisplayFor(modelItem => Model.TahunTerbit)<br>
+   

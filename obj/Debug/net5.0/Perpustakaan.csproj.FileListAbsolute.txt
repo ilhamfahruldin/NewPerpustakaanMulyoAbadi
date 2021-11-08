@@ -515,3 +515,4 @@ D:\hasil clone Github\NewPerpustakaanMulyoAbadi\obj\Debug\net5.0\Razor\Views\Lis
 D:\hasil clone Github\NewPerpustakaanMulyoAbadi\obj\Debug\net5.0\Razor\Views\List\Detail.cshtml.g.cs
 D:\hasil clone Github\NewPerpustakaanMulyoAbadi\obj\Debug\net5.0\Razor\Views\List\AtomicHabit.cshtml.g.cs
 D:\hasil clone Github\NewPerpustakaanMulyoAbadi\obj\Debug\net5.0\Razor\Views\List\Invested.cshtml.g.cs
+D:\hasil clone Github\NewPerpustakaanMulyoAbadi\obj\Debug\net5.0\Razor\Views\List\Naruto.cshtml.g.cs

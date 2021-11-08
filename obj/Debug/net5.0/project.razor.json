@@ -15654,6 +15654,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\hasil clone Github\\NewPerpustakaanMulyoAbadi\\Views\\List\\Naruto.cshtml",
+      "TargetPath": "Views\\List\\Naruto.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\hasil clone Github\\NewPerpustakaanMulyoAbadi\\Views\\List\\Invested.cshtml",
       "TargetPath": "Views\\List\\Invested.cshtml",
       "FileKind": "mvc"
