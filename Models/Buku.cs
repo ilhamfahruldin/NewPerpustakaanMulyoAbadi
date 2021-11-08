@@ -11,5 +11,6 @@ namespace Perpustakaan.Models
 
         [DataType(DataType.Date)]
         public DateTime Terbit { get; set; }
+
     }
 }

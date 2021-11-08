@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Perpustakaan.Data;
 
 namespace Perpustakaan.Migrations
 {
     [DbContext(typeof(PerpusDbContext))]
-    partial class PerpusDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211101021901_SeedData")]
+    partial class SeedData
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -45,24 +47,14 @@ namespace Perpustakaan.Migrations
                     b.HasData(
                         new
                         {
-<<<<<<< HEAD
-                            Id = "9cf3ee2c-ca45-44a8-8a57-08b15b06bf3f",
-                            ConcurrencyStamp = "0e765116-a20a-4222-88e0-69ac58f258f2",
-=======
                             Id = "b504b8c3-35ce-4ae6-87e6-cd8a26c74a88",
                             ConcurrencyStamp = "ef0ddc42-57b9-4526-98cf-692ddd3e8916",
->>>>>>> 83467b8752368db4264e7398a4fc6aa16e8e68c1
                             Name = "Admin"
                         },
                         new
                         {
-<<<<<<< HEAD
-                            Id = "4376a3bb-954e-438b-9dac-8889a42a470c",
-                            ConcurrencyStamp = "93ec5c33-d8f4-412f-b6c9-81bc0a2c7e7c",
-=======
                             Id = "c5576429-d5f3-44f2-862f-39e32a7e4875",
                             ConcurrencyStamp = "47740692-e211-4a3b-8466-bc1cb5c54fb6",
->>>>>>> 83467b8752368db4264e7398a4fc6aa16e8e68c1
                             Name = "User"
                         });
                 });
@@ -179,38 +171,21 @@ namespace Perpustakaan.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("Deskripsi")
+                    b.Property<string>("Genre")
                         .HasColumnType("longtext");
 
-                    b.Property<string>("Judul")
-                        .HasColumnType("longtext");
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(65,30)");
 
-                    b.Property<DateTime>("Terbit")
+                    b.Property<DateTime>("ReleaseDate")
                         .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("longtext");
 
                     b.HasKey("Id");
 
                     b.ToTable("Bukus");
-                });
-
-            modelBuilder.Entity("Perpustakaan.Models.Details", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    b.Property<string>("Judul")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Pengarang")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("TahunTerbit")
-                        .HasColumnType("longtext");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Details");
                 });
 
             modelBuilder.Entity("Perpustakaan.Models.Pembaca", b =>
@@ -282,25 +257,59 @@ namespace Perpustakaan.Migrations
                     b.HasData(
                         new
                         {
-
-                            Id = "cc641b6e-6e61-44d8-acb1-aeba3ce7f62e",
+                            Id = "fd233e81-0dc3-4b4d-806f-45f22c693eaf",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "acd804df-7fca-49db-81af-51c83d54fc4e",
-
+                            ConcurrencyStamp = "1d1af99c-b6cf-45ba-9622-70e68233542d",
                             Email = "dwimul@admin.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             Name = "Mulyono",
                             NormalizedEmail = "DWIMUL@ADMIN.COM",
                             NormalizedUserName = "ADMIN",
-
-                            PasswordHash = "AQAAAAEAACcQAAAAEFyXwsfhShwkry+sLx2fR4BcynKHrWe94ZpswLk+fK+XcYm3LQ4NxCJNNtmtNgV2Sw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEJ4ITCDIFFudvs4lhcrp7j1HGBSI+zp8PDPXL/bAD9G+ouwlN817m01r7PzsQlodJw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "d6a851e2-1af2-49ad-8be5-1ed899c65f5e",
+                            SecurityStamp = "f64d5001-c8d6-471d-8af4-8bb82de2fe9c",
                             TwoFactorEnabled = false,
                             UserName = "admin"
                         });
+                });
 
+            modelBuilder.Entity("Perpustakaan.Models.TodoItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("TodoListId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TodoListId");
+
+                    b.ToTable("TodoItems");
+                });
+
+            modelBuilder.Entity("Perpustakaan.Models.TodoList", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("varchar(255)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("TodoLists");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

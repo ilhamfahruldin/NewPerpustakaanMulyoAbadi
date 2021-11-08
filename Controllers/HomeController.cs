@@ -12,7 +12,6 @@ using Perpustakaan.Models;
 
 namespace Perpustakaan.Controllers
 {
-    [Authorize]
     [Authorize(Roles = "Admin")]
     public class HomeController : Controller
     {
@@ -43,10 +42,24 @@ namespace Perpustakaan.Controllers
         {
             return View();
         }
-        public IActionResult Isi()
+        public IActionResult AthomicHabits()
         {
             return View();
         
+        }
+        public IActionResult Invested()
+        {
+            return View();
+        
+        }
+        public IActionResult KebiasaanHidup()
+        {
+            return View();
+        
+        }
+        public IActionResult Pinjam()
+        {
+            return View();
         }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
