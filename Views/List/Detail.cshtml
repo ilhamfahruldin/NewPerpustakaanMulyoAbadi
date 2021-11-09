@@ -1,0 +1,31 @@
+@model Details
+@{
+    ViewData["Title"] = "Detail";
+}
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+        background: transparent;
+        text-align: center;
+        background-color: grey;
+    }
+    .h1{
+        font-size: 45px;
+    }
+</style>
+<h1>@Html.DisplayFor(modelItem => Model.Judul)</h1><br>
+<body>
+    <img src="https://th.bing.com/th/id/R.1d9841e4f2edce6099874eeaa6bc1cca?rik=V%2brvyMNfR4xzKg&riu=http%3a%2f%2fgifimage.net%2fwp-content%2fuploads%2f2017%2f10%2fbuku-gif-9.gif&ehk=KmNCNZB9OYDa0OAGv14ig8LVUtLph%2f%2b6Ctll1JjBch0%3d&risl=&pid=ImgRaw&r=0" >
+    
+        <h5>Judul: @Html.DisplayFor(modelItem => Model.Judul)</h5>
+    
+        <h5>Pengarang :  @Html.DisplayFor(modelItem => Model.Pengarang)</h5>
+   
+        <h5>Tahun Terbit: @Html.DisplayFor(modelItem => Model.TahunTerbit)</h5>
+</body>
+   

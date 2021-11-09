@@ -1,48 +1,119 @@
-﻿@{
+﻿
+@{
     ViewData["Title"] = "Perpustakaan";
 }
 <style>
-section {
-  margin: auto;
-  display: flex;
-  margin-bottom: 50px;
-}
-.kolom{
-  margin-top: 70px;
-  margin-bottom: 80px;
-}
-.kolom .judul {
-  font-size: 30px;
-  font-weight: bold;
-  font-family: 'DPSDbeyond';
-}
-h5{
-  font-family: initial;
-  font-weight: 800;
-  font-size: 25px;
-  margin-bottom: 30px;
 
-}
-a.tombol{
-  background: #fc5185;
-  border-radius: 20px;
-  margin-top: 20px;
-  padding: 10px 20px 10px 20px;
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-}
+  {text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  .body{
+    margin:0px;
+    padding: 0px;
+    font-family: 'Open Sans',sans-serif;
+  }
+  .wrapper{
+    width: 1100px;
+    margin: auto;
+    position: relative;
+  }
+  .logo a{
+    font-size: 25px;
+    font-weight: 500; 
+    float:left;
+    font-family: 'muara demo';
+    color: blueviolet;
+  }
+  .menu{
+    float: right;
+  }
+
+  nav{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 30px;
+    position: sticky;
+    top: 0;
+    position: -webkit-sticky;
+  }
+  
+  section{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+  }
+  .kolom{
+    margin-top: 75px;
+    margin-bottom: 15px;
+  }
+  .kolom .deskripsi{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #fc5185;
+    margin-bottom:-10px;
+  }
+  h2{
+    font-family: 'comic sans ms';
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 5px;
+    margin-top: none;
+    width: 100%;
+    line-height: 40px;
+    color:#fc5185;
+  }
+  a.tombol{
+    background: #fc5185;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .p{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
 </style>
-<body>
 <html>
-  <section>
-  <img src="https://img.freepik.com/free-vector/international-literacy-day-with-lots-books_23-2148608688.jpg?size=338&ext=jpg"width="550">
-  <div class="kolom">
-    <p class="judul"> Perpustakaan Mulyo Abadi</p>
-    <h5>Selamat Datang</h5>
-    <p><a href="https://localhost:5001/Home/List" class="tombol">Masuk</a></p>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+<body>
+  <nav>
+    <div class="wrapper">
+      <div class="logo"><a href="">PerpustakaanMulyoAbadi</a></div>
+      <div class="menu">
+        <ul>
+        
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="wrapper">
+      <section id="Home">
+        <img src="https://image.freepik.com/free-vector/library-isometric-illustration_1284-23674.jpg" width="430">
+        <div class="kolom">
+          <p class="deskripsi">Selamat Datang di</p>
+          <h2>PerpustakaanMulyoAbadi</h2>
+          <p style="font-family: muara demo;">"Perpustakaan yang baik tidak akan terlalu rapi, juga terlalu berdebu,
+             karena seseorang akan selalu ada di sana,
+             mengambil buku dari rak dan membacanya hingga larut."</p><br>
+          <p><a href="https://localhost:5001/Home/Rekomendasi" class="tombol">Daftar Rekomendasi</a></p><br>
 
-  </div>
+          
+
+          <p><a href="https://localhost:5001/List/List" class="tombol">Daftar Buku</a></p>
+        </div>
+      </section>
+    </div>
 </body>
 </html>
-</section>
+>>>>>>> e0271b69e67733be608b4951a6d99aa0b303980d

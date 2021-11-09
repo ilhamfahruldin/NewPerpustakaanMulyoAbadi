@@ -12,8 +12,7 @@ public class PerpusDbContext : IdentityDbContext<Pembaca>
     { }
     public DbSet <Buku> Bukus { get; set; }
 
-    public DbSet<TodoList> TodoLists { get; set; }
-    public DbSet<TodoItem> TodoItems { get; set; }
+    public DbSet<Details> Details { get; set; }
     protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
@@ -38,10 +37,11 @@ public class PerpusDbContext : IdentityDbContext<Pembaca>
             builder.Entity<Pembaca>()
                 .HasData(admin);
         }
-
-
-
-    }
 }
+}
+
+
+
+
 
 

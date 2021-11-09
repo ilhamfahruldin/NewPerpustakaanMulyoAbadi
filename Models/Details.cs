@@ -3,14 +3,14 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Perpustakaan.Models
 {
-    public class Buku
+    public class Details
     {
         public int Id { get; set; }
         public string Judul { get; set; }
-        public string Deskripsi { get; set; }
 
+        public string Pengarang { get; set; }
+        
         [DataType(DataType.Date)]
-        public DateTime Terbit { get; set; }
-
+        public string TahunTerbit { get; set; }
     }
 }

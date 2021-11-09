@@ -9,8 +9,8 @@ using Perpustakaan.Data;
 namespace Perpustakaan.Migrations
 {
     [DbContext(typeof(PerpusDbContext))]
-    [Migration("20211101024911_SeedData")]
-    partial class SeedData
+    [Migration("20211108014957_Details")]
+    partial class Details
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -43,20 +43,6 @@ namespace Perpustakaan.Migrations
                         .HasDatabaseName("RoleNameIndex");
 
                     b.ToTable("AspNetRoles");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "491a91a4-f351-431b-bc95-0b7d042685ce",
-                            ConcurrencyStamp = "93d131a2-2922-4662-b437-95f353a160e6",
-                            Name = "Admin"
-                        },
-                        new
-                        {
-                            Id = "6e64fcf7-9e46-4d44-ba9b-c679e8d0b6f0",
-                            ConcurrencyStamp = "006825a5-e8d6-413b-a84b-8788c7fc0165",
-                            Name = "User"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -171,21 +157,38 @@ namespace Perpustakaan.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("Genre")
+                    b.Property<string>("Deskripsi")
                         .HasColumnType("longtext");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(65,30)");
+                    b.Property<string>("Judul")
+                        .HasColumnType("longtext");
 
-                    b.Property<DateTime>("ReleaseDate")
+                    b.Property<DateTime>("Terbit")
                         .HasColumnType("datetime(6)");
-
-                    b.Property<string>("Title")
-                        .HasColumnType("longtext");
 
                     b.HasKey("Id");
 
                     b.ToTable("Bukus");
+                });
+
+            modelBuilder.Entity("Perpustakaan.Models.Details", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Judul")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Pengarang")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("TahunTerbit")
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Details");
                 });
 
             modelBuilder.Entity("Perpustakaan.Models.Pembaca", b =>
@@ -253,63 +256,6 @@ namespace Perpustakaan.Migrations
                         .HasDatabaseName("UserNameIndex");
 
                     b.ToTable("AspNetUsers");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "6775cd14-60b0-4292-90d2-26dc7f919179",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "d8c03564-f71b-456a-887b-7f5b8ec1c46f",
-                            Email = "diki@admin.com",
-                            EmailConfirmed = true,
-                            LockoutEnabled = false,
-                            Name = "Diki",
-                            NormalizedEmail = "DIKI@ADMIN.COM",
-                            NormalizedUserName = "DIKI@ADMIN.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEJUBIOYwM3oZGQ+TuVqYDZ8Tlg+7y0KNC2AoCKC35DMfEdhNMTiKcB7Rd2aYG7Ermg==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "e5c12074-1ace-4091-a53c-c001a6ffcda1",
-                            TwoFactorEnabled = false,
-                            UserName = "diki@admin.com"
-                        });
-                });
-
-            modelBuilder.Entity("Perpustakaan.Models.TodoItem", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("longtext");
-
-                    b.Property<int>("TodoListId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("TodoListId");
-
-                    b.ToTable("TodoItems");
-                });
-
-            modelBuilder.Entity("Perpustakaan.Models.TodoList", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("UserId")
-                        .HasColumnType("varchar(255)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("TodoLists");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -361,36 +307,6 @@ namespace Perpustakaan.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("Perpustakaan.Models.TodoItem", b =>
-                {
-                    b.HasOne("Perpustakaan.Models.TodoList", "TodoList")
-                        .WithMany("TodoItems")
-                        .HasForeignKey("TodoListId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("TodoList");
-                });
-
-            modelBuilder.Entity("Perpustakaan.Models.TodoList", b =>
-                {
-                    b.HasOne("Perpustakaan.Models.Pembaca", "User")
-                        .WithMany("TodoLists")
-                        .HasForeignKey("UserId");
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("Perpustakaan.Models.Pembaca", b =>
-                {
-                    b.Navigation("TodoLists");
-                });
-
-            modelBuilder.Entity("Perpustakaan.Models.TodoList", b =>
-                {
-                    b.Navigation("TodoItems");
                 });
 #pragma warning restore 612, 618
         }

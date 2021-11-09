@@ -169,21 +169,38 @@ namespace Perpustakaan.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("Genre")
+                    b.Property<string>("Deskripsi")
                         .HasColumnType("longtext");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(65,30)");
+                    b.Property<string>("Judul")
+                        .HasColumnType("longtext");
 
-                    b.Property<DateTime>("ReleaseDate")
+                    b.Property<DateTime>("Terbit")
                         .HasColumnType("datetime(6)");
-
-                    b.Property<string>("Title")
-                        .HasColumnType("longtext");
 
                     b.HasKey("Id");
 
                     b.ToTable("Bukus");
+                });
+
+            modelBuilder.Entity("Perpustakaan.Models.Details", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Judul")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Pengarang")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("TahunTerbit")
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Details");
                 });
 
             modelBuilder.Entity("Perpustakaan.Models.Pembaca", b =>
@@ -308,6 +325,7 @@ namespace Perpustakaan.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("TodoLists");
+
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
