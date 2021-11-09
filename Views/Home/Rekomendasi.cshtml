@@ -1,0 +1,85 @@
+@model IEnumerable<Buku>
+@{
+    ViewData["Title"] = "Perpustakaan";
+}
+<style>
+  .buku-list {
+    width: 98%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+  .listbuku img{
+    border-color: black;
+  }
+.listbuku {
+    width: 17%;
+    margin: 0 auto;
+}
+
+.listbuku p {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: red;
+}
+body{
+  background-image: url("https://image.freepik.com/free-vector/blue-fluid-background_53876-114597.jpg");
+}
+h1{
+  color: rebeccapurple;
+}
+.buku-list2 {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+</style>
+<body>
+<h1 style="font-family:'comic sans ms';"><center>Rekomendasi Buku:</h1></center><br>
+  
+<div class="buku-list">
+    <div class="listbuku">
+    <img src="https://upload.wikimedia.org/wikipedia/jv/thumb/b/b5/KBBI2005.jpg/1200px-KBBI2005.jpg" width="155" height="235"/>
+    <p>Kamus</p>
+    </div>
+    <div class="listbuku">
+    <a href="https://localhost:5001/List/AtomicHabit"><img src="https://elsamara.id/wp-content/uploads/2021/03/ID_AHPK2019MTH09AHP-668x1024-1.jpg"width="155"/></a>
+      <p>AtomicHabits</p>
+    </div>
+    <div class="listbuku">
+    <img src="https://i0.wp.com/s0.bukalapak.com/img/0889434832/w-1000/Buku_Anatomi_Tumbuhan_Berbiji.jpg"width="155" height="235"/>
+    <p>AnatomiTumbuhan</p>
+    </div>
+    <div class="listbuku">
+      <a href="https://localhost:5001/List/Invested"><img src="https://images.bisnis-cdn.com//upload/img/Invested%20-%20Danielle%20Town.png" width="260" height="239"/></a>
+      <p>Invested</p>
+    </div>
+  </div>
+</div>
+<div class="buku-list2">
+    <div class="listbuku">
+    <img src="https://s0.bukalapak.com/img/5734093382/w-1000/Pulang_by_Tere_Liye.jpg"width="170"/>
+    <p>Pulang</p>
+    </div>
+    <div class="listbuku">
+    <a href="https://localhost:5001/List/AtomicHabit"><img src="https://assets-a1.kompasiana.com/items/album/2020/03/30/nhbfsgaaxaaaaamahrtgogalzwq-5e817eec02c9f01bc27f0752.jpg?t=o&v=1200"width="165"/></a>
+      <p>Bumi</p>
+    </div>
+    <div class="listbuku">
+      <a href="https://localhost:5001/Home/KebiasaanHidup"><img src="https://www.belbuk.com/images/products/buku/hobi--keterampilan/hobi/Revolusi-Olahraga-Suatu-Analisis-Sintesis-dari-Sudut-Sosiologi-Olahraga-5efd4dac32205l.jpg"width="155" height="250"/></a>
+      <p>Naruto</p>
+    </div>
+    <div class="listbuku">
+      <a href="https://localhost:5001/List/Invested"><img src="https://th.bing.com/th/id/R.73a011fc30e1a863198815ec55df2499?rik=xW%2b3csNmCmVj0Q&riu=http%3a%2f%2f3.
+      bp.blogspot.com%2f-Br4fvslGCqc%2fUxJxvYki4jI%2fAAAAAAAAAiw%2fw2rnsRuurLg%2fs1600%2frf-review-buku-cinta-brontosaurus.
+      jpg&ehk=EeWES6xmwlWFwjCX%2bDDWihmcAPc8RQfuP7GE27KXeaM%3d&risl=&pid=ImgRaw&r=0" width="150"/></a>
+      <p>CintaBrontosaurus</p>
+    </div>
+  </div>
+</div>
+</body>
+
+

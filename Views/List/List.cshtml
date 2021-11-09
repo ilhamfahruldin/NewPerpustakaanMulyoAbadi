@@ -1,0 +1,25 @@
+@model IEnumerable<Buku>
+@{
+ViewData["Title"] = "Create";
+}
+<h2><center>Daftar Buku:</center></h2><br>
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>Judul</th>
+            <th>Deskripsi</th>
+            <th>Terbit</th>
+            <th></th>
+        </tr>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.Judul</td>
+            <td>@item.Deskripsi</td>
+            <td>@item.Terbit</td>
+            <td><a asp-controller="List" asp-action="Detail" asp-route-id="@item.Id">Detail</a></td>
+        </tr>
+        }
+    </thead>
+</table>
+<button><a asp-controller="List" asp-action="Create">BuatBukuBaru</a></button>

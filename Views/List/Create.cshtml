@@ -1,0 +1,37 @@
+@model Perpustakaan.Models.Buku
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="text-center">
+    <h1 class="display-4"> Buat Buku Baru </h1>
+</div>
+</div>
+<form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Judul" class="control-label"></label>
+                <input asp-for="Judul" class="form-control" />
+                <span asp-validation-for="Judul" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Deskripsi" class="control-label"></label>
+                <input asp-for="Deskripsi" class="form-control" />
+                <span asp-validation-for="Deskripsi" class="text-danger"></span>
+<<<<<<< HEAD
+            </div>
+            <div class="form-group">
+                <label asp-for="Terbit" class="control-label"></label>
+                <input asp-for="Terbit" class="form-control" />
+                <span asp-validation-for="Terbit" class="text-danger"></span>
+=======
+>>>>>>> 83467b8752368db4264e7398a4fc6aa16e8e68c1
+            </div> 
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+
+        @section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

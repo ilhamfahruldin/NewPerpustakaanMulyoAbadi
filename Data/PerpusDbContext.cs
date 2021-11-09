@@ -11,9 +11,7 @@ namespace Perpustakaan.Data
     public PerpusDbContext (DbContextOptions<PerpusDbContext> options) : base(options)
     { }
     public DbSet <Buku> Bukus { get; set; }
-
-    public DbSet<TodoList> TodoLists { get; set; }
-    public DbSet<TodoItem> TodoItems { get; set; }
+    public DbSet<Details> Details { get; set; }
     protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

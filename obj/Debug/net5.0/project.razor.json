@@ -15639,6 +15639,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\farell dyas\\NewPerpustakaanMulyoAbadi\\Views\\List\\Invested.cshtml",
+      "TargetPath": "Views\\List\\Invested.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\farell dyas\\NewPerpustakaanMulyoAbadi\\Views\\List\\AtomicHabit.cshtml",
+      "TargetPath": "Views\\List\\AtomicHabit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\farell dyas\\NewPerpustakaanMulyoAbadi\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -15651,6 +15661,11 @@
     {
       "FilePath": "d:\\farell dyas\\NewPerpustakaanMulyoAbadi\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\farell dyas\\NewPerpustakaanMulyoAbadi\\Views\\List\\Detail.cshtml",
+      "TargetPath": "Views\\List\\Detail.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15679,6 +15694,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\farell dyas\\NewPerpustakaanMulyoAbadi\\Views\\Home\\Rekomendasi.cshtml",
+      "TargetPath": "Views\\Home\\Rekomendasi.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\farell dyas\\NewPerpustakaanMulyoAbadi\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
@@ -15691,6 +15711,21 @@
     {
       "FilePath": "d:\\farell dyas\\NewPerpustakaanMulyoAbadi\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\farell dyas\\NewPerpustakaanMulyoAbadi\\Views\\List\\Naruto.cshtml",
+      "TargetPath": "Views\\List\\Naruto.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\farell dyas\\NewPerpustakaanMulyoAbadi\\Views\\List\\Create.cshtml",
+      "TargetPath": "Views\\List\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\farell dyas\\NewPerpustakaanMulyoAbadi\\Views\\List\\List.cshtml",
+      "TargetPath": "Views\\List\\List.cshtml",
       "FileKind": "mvc"
     },
     {
