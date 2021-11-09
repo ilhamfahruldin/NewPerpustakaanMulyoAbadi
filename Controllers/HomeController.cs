@@ -12,7 +12,7 @@ using Perpustakaan.Models;
 
 namespace Perpustakaan.Controllers
 {
-    [Authorize(Roles = "Admin")]
+    
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -53,6 +53,11 @@ namespace Perpustakaan.Controllers
         
         }
         public IActionResult KebiasaanHidup()
+        {
+            return View();
+        
+        }
+        public IActionResult OnePunchMan()
         {
             return View();
         

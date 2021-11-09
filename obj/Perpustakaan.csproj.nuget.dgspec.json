@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\project\\NewPerpustakaanMulyoAbadi\\Perpustakaan.csproj": {}
+    "D:\\farell dyas\\NewPerpustakaanMulyoAbadi\\Perpustakaan.csproj": {}
   },
   "projects": {
-    "D:\\project\\NewPerpustakaanMulyoAbadi\\Perpustakaan.csproj": {
+    "D:\\farell dyas\\NewPerpustakaanMulyoAbadi\\Perpustakaan.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\project\\NewPerpustakaanMulyoAbadi\\Perpustakaan.csproj",
+        "projectUniqueName": "D:\\farell dyas\\NewPerpustakaanMulyoAbadi\\Perpustakaan.csproj",
         "projectName": "Perpustakaan",
-        "projectPath": "D:\\project\\NewPerpustakaanMulyoAbadi\\Perpustakaan.csproj",
-        "packagesPath": "C:\\Users\\dwiml\\.nuget\\packages\\",
-        "outputPath": "D:\\project\\NewPerpustakaanMulyoAbadi\\obj\\",
+        "projectPath": "D:\\farell dyas\\NewPerpustakaanMulyoAbadi\\Perpustakaan.csproj",
+        "packagesPath": "C:\\Users\\Farel\\.nuget\\packages\\",
+        "outputPath": "D:\\farell dyas\\NewPerpustakaanMulyoAbadi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dwiml\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Farel\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
