@@ -45,24 +45,14 @@ namespace Perpustakaan.Migrations
                     b.HasData(
                         new
                         {
-<<<<<<< HEAD
                             Id = "9cf3ee2c-ca45-44a8-8a57-08b15b06bf3f",
                             ConcurrencyStamp = "0e765116-a20a-4222-88e0-69ac58f258f2",
-=======
-                            Id = "b504b8c3-35ce-4ae6-87e6-cd8a26c74a88",
-                            ConcurrencyStamp = "ef0ddc42-57b9-4526-98cf-692ddd3e8916",
->>>>>>> 83467b8752368db4264e7398a4fc6aa16e8e68c1
                             Name = "Admin"
                         },
                         new
                         {
-<<<<<<< HEAD
                             Id = "4376a3bb-954e-438b-9dac-8889a42a470c",
                             ConcurrencyStamp = "93ec5c33-d8f4-412f-b6c9-81bc0a2c7e7c",
-=======
-                            Id = "c5576429-d5f3-44f2-862f-39e32a7e4875",
-                            ConcurrencyStamp = "47740692-e211-4a3b-8466-bc1cb5c54fb6",
->>>>>>> 83467b8752368db4264e7398a4fc6aa16e8e68c1
                             Name = "User"
                         });
                 });

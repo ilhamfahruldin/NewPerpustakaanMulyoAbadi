@@ -11,7 +11,6 @@ namespace Perpustakaan.Data
     public PerpusDbContext (DbContextOptions<PerpusDbContext> options) : base(options)
     { }
     public DbSet <Buku> Bukus { get; set; }
-<<<<<<< HEAD
     public DbSet<Details> Details { get; set; }
     protected override void OnModelCreating(ModelBuilder builder)
         {
