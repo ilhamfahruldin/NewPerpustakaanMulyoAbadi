@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\project\\NewPerpustakaanMulyoAbadi\\Perpustakaan.csproj": {}
+    "C:\\Users\\HP\\PerpustakaanAbadi\\Perpustakaan.csproj": {}
   },
   "projects": {
-    "D:\\project\\NewPerpustakaanMulyoAbadi\\Perpustakaan.csproj": {
+    "C:\\Users\\HP\\PerpustakaanAbadi\\Perpustakaan.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\project\\NewPerpustakaanMulyoAbadi\\Perpustakaan.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\PerpustakaanAbadi\\Perpustakaan.csproj",
         "projectName": "Perpustakaan",
-        "projectPath": "D:\\project\\NewPerpustakaanMulyoAbadi\\Perpustakaan.csproj",
-        "packagesPath": "C:\\Users\\dwiml\\.nuget\\packages\\",
-        "outputPath": "D:\\project\\NewPerpustakaanMulyoAbadi\\obj\\",
+        "projectPath": "C:\\Users\\HP\\PerpustakaanAbadi\\Perpustakaan.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\PerpustakaanAbadi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dwiml\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -103,7 +103,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
