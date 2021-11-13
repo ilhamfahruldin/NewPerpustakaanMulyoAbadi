@@ -9467,24 +9467,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Farel\\.nuget\\packages\\": {}
+    "C:\\Users\\UNBK_PC11\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\farell dyas\\NewPerpustakaanMulyoAbadi\\Perpustakaan.csproj",
+      "projectUniqueName": "C:\\clone github\\NewPerpustakaanMulyoAbadi\\Perpustakaan.csproj",
       "projectName": "Perpustakaan",
-      "projectPath": "D:\\farell dyas\\NewPerpustakaanMulyoAbadi\\Perpustakaan.csproj",
-      "packagesPath": "C:\\Users\\Farel\\.nuget\\packages\\",
-      "outputPath": "D:\\farell dyas\\NewPerpustakaanMulyoAbadi\\obj\\",
+      "projectPath": "C:\\clone github\\NewPerpustakaanMulyoAbadi\\Perpustakaan.csproj",
+      "packagesPath": "C:\\Users\\UNBK_PC11\\.nuget\\packages\\",
+      "outputPath": "C:\\clone github\\NewPerpustakaanMulyoAbadi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Farel\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\UNBK_PC11\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

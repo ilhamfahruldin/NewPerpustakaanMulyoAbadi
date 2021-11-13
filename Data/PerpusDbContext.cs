@@ -25,14 +25,14 @@ namespace Perpustakaan.Data
             var admin = new Pembaca
             {
                 Id = Guid.NewGuid().ToString(),
-                Name = "Farell",
+                Name = "ANDIKA",
                 UserName = "admin",
                 NormalizedUserName = "ADMIN",
-                Email = "dyasrestu@admin.com",
-                NormalizedEmail = "DYASRESTU@ADMIN.COM",
+                Email = "andika@admin.com",
+                NormalizedEmail = "ANDIKA@ADMIN.COM",
                 EmailConfirmed = true
             };
-            admin.PasswordHash = hasher.HashPassword(admin, "Farell123!");
+            admin.PasswordHash = hasher.HashPassword(admin, "Andika123#");
             builder.Entity<Pembaca>()
                 .HasData(admin);
         }
